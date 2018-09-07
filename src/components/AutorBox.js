@@ -4,8 +4,8 @@ import fetch from 'node-fetch';
 import PubSub from 'pubsub-js';
 
 class FormularioAutores extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = { nome: '', email: '', senha: '' };
     this.enviaForm = this.enviaForm.bind(this);
     this.setNome = this.setNome.bind(this);
