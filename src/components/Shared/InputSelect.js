@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class InputSelect extends Component {
+export default class InputSelect extends React.Component {
   render() {
-    let autores = this.props.autores.map(autor => {
-      return <option key={autor.id} value={autor.id}>{autor.nome}</option>;
+    const autores = this.props.lista.map(item => {
+      return <option key={item.id} value={item.id}>{item.nome}</option>;
     });
 
     return (
