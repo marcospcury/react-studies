@@ -1,4 +1,5 @@
 import React from 'react';
+import PubSub from 'pubsub-js';
 import InputCustomizado from '../Shared/InputCustomizado';
 
 export default class FormularioAutores extends React.Component {
